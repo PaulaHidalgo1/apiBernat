@@ -2,7 +2,7 @@ var router = require('express').Router()
 const gatetes = new Map();
 
 gatetes.set("1", "Michi");
-gatetes.set("2", "Kitty");
+gatetes.set("2", "Kitti");
 
 
 router.get('/:id', function(req, res) {
