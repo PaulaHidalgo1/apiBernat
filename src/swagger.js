@@ -407,7 +407,7 @@ const swaggerSpec =
 const swaggerDocs = (app, port) => {
 
     app.use('/api/docs', swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
-    console.log(`Swagger docs disponible en localhost:${port}/api/docs`);
+    console.log(`Swagger docs disponible en localhost/api/docs`);
 
 }
 

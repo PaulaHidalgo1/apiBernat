@@ -2,7 +2,7 @@ var express = require('express') //llamamos a Express
 var app = express()       
 var bodyParser = require('body-parser')        
 
-var port = process.env.PORT || 4000  // establecemos nuestro puerto
+var port = process.env.PORT || 8080  // establecemos nuestro puerto
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())            
@@ -16,6 +16,6 @@ app.use('/api', router)
 
 //arrancamos el servidor
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}.`);
+    console.log(`Server is running on port 80.`);
     SwaggerDocs(app, port);
   });
